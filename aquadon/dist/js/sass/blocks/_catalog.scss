@@ -1,0 +1,141 @@
+.catalog {
+	padding: 70px 0 104px 0;
+	&__wrapper {
+		margin-top: 75px;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-between;
+	}
+	&__item {
+		width: 250px;
+		margin: 0 auto 55px auto;
+		padding-bottom: 18px;
+		cursor: pointer;
+		outline: 2px solid rgba(250,250,250,0.3);
+		transition: 0.5s all;
+		background-color: #41a4ef;
+		&:hover {
+			box-shadow: 0 11px 22px rgba(0,0,0,0.25), 0 8px 8px rgba(0,0,0,0.22);
+			background-image: linear-gradient(-122deg, #1a79ea 0%, #218de6 100%);
+			text-decoration: none;
+		}
+	}
+	&__quadrat {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		width: 100%;
+		height: 300px;
+		background-color: #ffffff;
+		overflow: hidden;
+		cursor: pointer;
+		padding-bottom: 10px;   
+	}
+	&__item-image {
+		max-height: 95%;
+		max-width: 55%;
+		cursor: pointer;
+		transition: 1s all;
+		&:hover {
+			transform: scale(1.04);
+		}
+	}
+	&__item-name {
+		margin-top: 38px;
+		width: 82%;
+		padding-left: 10px;
+		color: #ffffff;
+		font-size: 17px;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 1180px) {
+	.catalog {
+		&__wrapper {
+			justify-content: space-between;
+		}
+		&__item {
+			width: 225px;
+		}
+		&__quadrat {
+			height: 264.6px;   
+		}
+		&__item-name {
+			margin-top: 34.2px;
+			font-size: 15px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.catalog {
+		&__wrapper {
+			margin-top: 60px
+		}
+		&__item {
+			width: 202px;
+			margin-bottom: 40px;
+		}
+		&__quadrat {
+			height: 237.35px;   
+		}
+		&__item-name {
+			margin-top: 18px;
+			font-size: 13px;
+			width: 86%;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.catalog {
+		&__wrapper {
+			margin-top: 55px
+		}
+		&__item {
+			width: 170px;
+			margin-bottom: 35px;
+		}
+		&__quadrat {
+			height: 199.9px;   
+		}
+		&__item-name {
+			margin-top: 18px;
+			font-size: 12px;
+			width: 86%;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.catalog {
+		&__item {
+			width: 250px;
+		}
+		&__quadrat {
+			height: 300px;   
+		}
+		&__item-name {
+			font-size: 17px;
+		}
+	}
+}
+
+@media (max-width: 655px) {
+	.catalog {
+		padding: 70px 0 85px 0;
+		&__item {
+			width: 200px;
+		}
+		&__quadrat {
+			height: 232.5px;   
+		}
+		&__item-name {
+			font-size: 13px;
+		}
+	}
+}

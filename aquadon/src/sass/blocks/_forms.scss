@@ -1,0 +1,136 @@
+
+.search-form {
+	max-width: 350px;
+	flex-grow: 1;
+	border-radius: 2px;
+	height: 31px;
+	margin: 0 0 0 20px;
+	display: flex;
+	align-items: center;
+	input {
+		border: 1px solid #e1e1e1;
+		padding-left: 15px;
+		height: 100%;
+		width: calc(70%);
+		color: #a5a5a5;
+		font-size: 14px;
+		font-weight: 500;
+		font-variant: small-caps;
+		display: flex;
+		align-items: center;
+		&:focus {
+			border: none;
+			outline-color: $main_color;
+		}			
+	}
+	&_button {
+		height: 100%;
+        width: calc(31%);
+        background-color: $main_color;
+        border-radius: 2px;
+        opacity: 0.5;
+        border-left: 1px solid #e1e1e1;
+		box-shadow: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+        &:hover {
+            background-color: $main_color;
+            opacity: 1;
+        }
+	}
+	&_icon {
+		width: 23px;
+	}    
+}
+
+.feed-form {
+	margin-top: 38px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 2;
+	input {
+		width: 331px;
+		height: 55px;
+		padding: 0 20px;
+		border: 2px solid #e1e1e1;
+		background-color: #ffffff;
+		color: #c2c2c2;
+		font-size: 17px;
+		font-weight: 500;
+		font-variant: small-caps;
+		margin-bottom: 27px;
+		z-index: 2;
+	}
+	textarea {
+		width: 331px;
+		height: 55px;
+		padding: 15px 20px 0 20px;
+		height: 145px;
+		border: 2px solid #e1e1e1;
+		background-color: #ffffff;
+		margin-bottom: 63px;
+		color: #c2c2c2;
+		font-size: 19px;
+		font-weight: 500;
+		font-variant: small-caps;
+		z-index: 2;
+	}
+	&_modal {
+		margin: 0;
+		input {
+			font-size: 16px;
+		}
+	}
+	.error {
+		border: 1px solid red;       
+	}
+
+	label.error {
+		border: none;
+		text-align: center;
+		font-family: Roboto;
+		font-weight: 700;
+		color: #424242;
+		margin-bottom: 25px;
+	}
+}
+
+@media (max-width: 991px) {
+	.feed-form {
+		margin-top: 30.4px;
+		input {
+			width: 264.8px;
+			height: 44px;
+			border: 1px solid #e1e1e1;
+			font-size: 15.2px;
+			margin-bottom: 21.6px;
+		}
+		textarea {
+			width: 264.8px;
+			font-size: 15.2px;
+			height: 116px;
+			border: 1px solid #e1e1e1;
+			margin-bottom: 40.4px;
+		}
+	}
+}
+
+
+@media (max-width: 575px) {
+	.search-form {
+		&_off {
+			display: none;
+		}
+	}
+	.feed-form {
+		input {
+			width: 234.8px;
+		}
+		textarea {
+			width: 234.8px;
+		}
+	}
+}
+	

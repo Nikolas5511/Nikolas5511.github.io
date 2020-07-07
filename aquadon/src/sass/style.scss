@@ -1,0 +1,38 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/stylefonts';
+@import 'libs/slick';
+
+@import 'base/variables';
+
+* {
+    font-family: 'Avenir Next Cyr', Verdana, Tahoma, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.bg_blue_gradient {
+    background-image: radial-gradient(circle 1126px at center, #56ccf2 0%, #2f80ed 100%)
+}
+@import 'base/variables';
+@import 'blocks/buttons';
+@import 'blocks/forms';
+@import 'blocks/phone';
+@import 'blocks/menu';
+@import 'blocks/top-menu';
+@import 'blocks/subheader';
+@import 'blocks/main-menu';
+@import 'blocks/slide-promo';
+@import 'blocks/promo';
+@import 'blocks/title-divider';
+@import 'blocks/catalog';
+@import 'blocks/ask';
+@import 'blocks/tabs';
+@import 'blocks/advantages';
+@import 'blocks/map';
+@import 'blocks/bottom';
+@import 'blocks/modal';
+@import 'blocks/pageup';

@@ -1,0 +1,105 @@
+.button {
+    width: 184px;
+	height: 49px;
+	background-color: #00d601;
+	border: none;
+	border-radius: 7px;
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+    letter-spacing: 0.58px;
+    box-shadow: 5px 5px 12px rgba(23, 182, 9, 0.54);
+    cursor: pointer;
+    transition: 0.5s all;
+	&:hover {
+        background-color: #108d10;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    &_on {
+        display: none;
+    }
+    &_blue {
+        width: 181px;
+        height: 51.5px;
+        background-color: $main_color;
+        box-shadow: 5px 5px 12px rgba(95, 183, 217, 0.54);
+        border-radius: 100px;
+        color: #ffffff;
+        font-size: 14px;
+        margin-bottom: 58px;     
+        &:hover {
+            background-color: #348aee;    
+        }
+        &_position {
+            position: absolute;
+            bottom: 142px; 
+        }
+    }
+    &_ask {
+        margin-bottom: 48px;
+		z-index: 2;
+    }	     		
+}
+
+@media (max-width: 991px) {
+    .button {
+        &_min {
+            width: 157px;
+            height: 41px;
+            font-size: 12px;
+        }
+        &_bottom {
+            width: 157px;
+			height: 41px;
+			font-size: 11px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .button {
+        &_min {
+            margin-bottom: 7px;
+        }
+        &_bottom {
+			height: 43px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .button {
+        &_blue {
+            width: 181px;
+            height: 51.5px;
+            &_position {
+                bottom: 128px; 
+            }
+        }
+        &_ask {
+            margin-bottom: 0;
+			width: 168px;
+			height: 47.5px;
+        }
+        &_off {
+            display: none;
+        }
+        &_on {
+            display: block;
+            text-align: center;
+            padding-top: 16px;
+            &:hover {
+                color: #ffffff;
+                text-decoration: none;    
+            }
+        }
+        &_bottom {
+            height: 49px;
+			width: 182px;
+			font-size: 13px;
+        }
+    }
+}

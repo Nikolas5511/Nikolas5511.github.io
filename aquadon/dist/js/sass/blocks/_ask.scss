@@ -1,0 +1,122 @@
+.ask {
+    background-color: $background_smoke;
+	padding: 117px 0 137px 0;
+    z-index: 0;
+    &__wrapper {
+        margin: 0 auto;
+        position: relative;
+		width: 709px;
+		min-height: 695px;
+		box-shadow: 28px 28px 87px rgba(21, 21, 21, 0.16);
+		border: 17px solid $main_color;
+		background-color: #ffffff;
+		padding: 63px 0 0 0;
+    }
+    &__glass {
+        position: absolute;
+		left: -259px;
+		bottom: 54px;
+        z-index: 1;
+    }
+    &__glass-shadow {
+        position: absolute;
+		left: 0px;
+		bottom: 0px;
+		z-index: 1;
+    }
+    &__pen {
+        position: absolute;
+		right: -134px;
+		top: 50px;
+		z-index: 1;
+    }
+	&__pen-shadow {
+        position: absolute;
+		right: 0px;
+		top: 200px;
+		z-index: 1;
+    }		     
+}
+
+@media (max-width: 991px) {
+	.ask {
+		&__wrapper {
+			width: 567px;
+			min-height: 580px;
+			padding: 50.4px 0 20.4px 0;
+		}
+		&__glass {
+			left: -208px;
+			bottom: 43.2px;
+			width: 289.6px;
+			height: 424.8px;
+		}
+		&__glass-shadow {
+			width: 148.8px;
+		}
+		&__pen {
+			right: -105px;
+			top: 35px;
+			width: 210px;
+		}
+		&__pen-shadow {
+			top: 172px;
+			width: 95.79px;
+		}		     
+	}
+}
+
+@media (max-width: 767px) {
+	.ask {
+		padding: 70px 0 85px 0;
+		&__wrapper {
+			padding: 45.4px 0 0 0;
+			width: 435px;
+			border: 14px solid $main_color;
+		}
+		&__glass {
+			left: -183px;
+			bottom: 43.2px;
+			width: 249.6px;
+			height: 364px;
+		}
+		&__glass-shadow {
+			width: 127.9px;
+		}
+		&__pen {
+			right: -74px;
+			top: 112px;
+			width: 141.6px;
+		}
+		&__pen-shadow {
+			top: 187px;
+			width: 65px;
+		}
+	}		     
+}
+
+@media (max-width: 575px) {
+	.ask {
+		background-image: $blue_gradient;
+		padding: 25px 0 25px 0;
+		&__wrapper {
+			padding: 45.4px 0 54.4px 0;
+			width: auto;
+			border: none;
+			background-color: rgba(232, 237, 239, 0.8);
+			min-height: 480px;
+		}
+		&__glass {
+			display: none;
+		}
+		&__glass-shadow {
+			display: none;
+		}
+		&__pen {
+			display: none;
+		}
+		&__pen-shadow {
+			display: none;
+		}
+	}		     
+}

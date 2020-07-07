@@ -1,0 +1,23 @@
+.arrow {
+    background: url('../img/icon/arrow_left.png') center center/auto no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 68px;
+	height: 68px;
+    border: 1px solid #bcc1c4;
+    margin-right: 12px;
+    &:hover {
+        background: url('../img/icon/arrow_left_white.png') center center/auto no-repeat;
+        border: 1px solid $main_color;
+        background-color: $main_color;
+    }
+    &_right {
+        background: url('../img/icon/arrow_right.png') center center/auto no-repeat;
+        &:hover {
+            background: url('../img/icon/arrow_right_white.png') center center/auto no-repeat;
+            border: 1px solid $main_color;
+            background-color: $main_color;
+        }
+    }      
+}

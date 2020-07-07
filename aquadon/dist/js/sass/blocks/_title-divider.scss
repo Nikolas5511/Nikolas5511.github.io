@@ -1,0 +1,120 @@
+.title {
+    text-align: center;
+	color: #525252;
+	font-size: 31px;
+	font-weight: 700;
+	font-variant: small-caps;
+    margin-bottom: 24px;
+    &_white {
+        color: #ffffff;
+    }
+    &_tab {
+        margin: 0 10px;
+        font-size: 19px;
+        padding: 10px 0;
+        transition: 0.05s all;
+        cursor: pointer;
+        &_active {
+            color: #525252;
+			text-decoration: none;
+			border-bottom: 4px solid $main_color;
+        }		
+    }
+    &_modal {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }	    
+}
+
+.divider {
+    margin: 0 auto;
+	width: 108px;
+	height: 4px;
+	background-color: $main_color;
+    &_white {
+        background-color: #ffffff;
+    }
+    &_modal {
+        height: 3px;
+        margin-bottom: 22px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .title {
+        font-size: 29px;
+        margin-bottom: 20px;
+        &_ask {
+            font-size: 24.8px;
+			margin-bottom: 19.2px;
+        }
+        &_tab {
+            margin: 0 7px;
+            font-size: 17px;
+            padding: 7px 0;
+            transition: 0.05s all;
+            &_active {
+                border-bottom: 3px solid $main_color;
+            }		
+        }
+        &_modal {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }	 	   
+    }
+    .divider {
+        &_modal {
+            height: 3px;
+            margin-bottom: 22px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 25px;
+        &_tab {
+            margin: 0 7px;
+            font-size: 16px;
+            padding: 6px 0;
+            transition: 0.05s all;
+            &_active {
+                border-bottom: 3px solid $main_color;
+            }		
+        }
+        &_modal {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }	 	   
+    }
+    .divider {
+        &_modal {
+            height: 3px;
+            margin-bottom: 22px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .title {
+        font-size: 20px;
+        &_tab {
+            font-size: 17px;
+        }
+    }
+    
+    .divider {
+        width: 78px;
+    }
+}
+
+@media (max-width: 575px) {
+    .title {
+        &_tab {
+            font-size: 14px;
+        }
+    }
+}
+
+

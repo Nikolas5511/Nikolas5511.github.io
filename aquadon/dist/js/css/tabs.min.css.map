@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,AAAC,CACF,gBAAgB,CAAE,OAAO,CAC5B,OAAO,CAAE,cAAc,CACvB",
+    "sources": [
+        "../blocks/tabs.scss"
+    ],
+    "names": [],
+    "file": "tabs.min.css"
+}
